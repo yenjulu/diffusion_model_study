@@ -1,0 +1,40 @@
+data:
+  N_diff_split: 42
+  N_diff_split_index: 0
+  N_shot_retro: 0
+  batch_size: 1
+  coil: /data/1.0mm_126-dir_R3x3_coils.h5
+  kdat: /data/1.0mm_126-dir_R3x3_kdat_slice_037.h5
+  kdat_dir_name: /data/1.0mm_126-dir_R3x3_kdat_slice_037.h5  # _redu_0.5
+  navi: null
+  normalize_kdat: 1.0
+  redu: 1.0  # 0.5, 1.0
+  repeats: 15
+  slice_idx: 37
+  train_rho: 0.4
+  valid_rho: 0.2
+learn:
+  epochs: 100
+  valid_loss_tracker: 12
+loss: MixL1L2Loss
+method: zsssl
+model:
+  ADMM_rho: 0.05
+  N_residual_block: 12
+  N_unroll: 8
+  batch_norm: false
+  contrasts_in_channels: true
+  features: 128
+  kernel_size: 3
+  lamda: 0.05
+  max_cg_iter: 6
+  net: ResNet2D # ResNet2D, DiffUNet, NCSNpp
+  requires_grad_lamda: true
+  unrolled_algorithm: ADMM # ADMM, MoDL
+optim:
+  gamma: 0.1
+  lr: 0.0005
+  method: Adam
+  step_size: 30
+test:
+  checkpoint: /examples/2024-10-18_zsssl_1.0mm_126-dir_R3x3_kdat_norm-kdat-1.0_self_ResNet2D_ResBlock-12_kernel-3_ADMM_08_lamda-0.050_Adam_lr-0.000500_MixL1L2Loss/zsssl_best.pth

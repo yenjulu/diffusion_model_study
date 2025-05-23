@@ -1,0 +1,30 @@
+# Compiled source #
+###################
+*.o
+*.so
+*.pyc
+
+# ignore *.h5 files
+*.h5
+*.pth
+
+# Logs and temporaries #
+########################
+*.log
+*~
+.coverage
+
+# Folders #
+###########
+build/
+dist/
+*.egg-info/
+__pycache__/
+.eggs/
+
+data/
+exp/
+results/
+results_AAPM/
+results_AAPM_tv/
+workdir/
