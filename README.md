@@ -33,7 +33,7 @@ Faster than Compressed Sensing
 
 <img src=https://github.com/user-attachments/assets/76bff4d0-e597-4393-a5c6-f9937004a723 width="400"/>
 
-2. DWI dataset <img src="assets/demo.gif" width="150"/>
+2. DWI dataset <img src="gif2.gif" width="150"/>
 
 # Reconstruction Using Diffusion Models
 <img src=https://github.com/user-attachments/assets/300abeae-fdb4-4ab1-ab2b-6ba19e92f868 width="400"/>
