@@ -16,6 +16,8 @@ Additional preprocessing steps, including regridding and removing oversampling
 An internal training mechanism tailored for specific matrix sizes or diffusion directions 
 Dataset with 21 directions, 114 slices, 32 coils, 200 x 200 matrix size: Total time of 20 minutes (using 1 GPU-A100)
 Faster than Compressed Sensing
+
+
 <img width="400" alt="docker ckt reuse explaination" src="https://github.com/user-attachments/assets/d5a85c3e-c546-4330-af37-d4078cb77bba" width="400"/>
 
 
